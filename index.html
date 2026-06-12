@@ -48,9 +48,10 @@
     works, the app records a few small events in <strong>our own
     database</strong> — when the app is opened, when an item is saved (and
     how: manually or via the share sheet), when a search leads to opening a
-    save, and when a review session is completed. These events contain no
-    content of your saves, are tied to your account, are never shared or
-    sold, and are deleted with your account.</li>
+    save, when a review session is completed, and when a "Your Signal"
+    reflection is revealed, fails (failure reason only), or leads to opening
+    a save. These events contain no content of your saves, are tied to your
+    account, are never shared or sold, and are deleted with your account.</li>
     <li><strong>Crash reports.</strong> If the app crashes, a technical
     report (device model, OS version, and what the app was doing at the
     moment of the crash) is sent to <strong>Sentry</strong> so we can find
@@ -83,10 +84,18 @@
     The result is stored once so the same item is not processed repeatedly.
     <strong>Your images are never sent to AI providers — only extracted text
     is.</strong></li>
+    <li><strong>Your Signal (on-demand reflection).</strong> When you
+    explicitly tap "Reveal", Poky sends lightweight metadata about your
+    recent saves — item titles, top categories, and top tags, with temporary
+    keys instead of item identifiers — to <strong>Google's Gemini
+    API</strong> to generate a short reflection. This happens only when you
+    ask: there is no background analysis and no stored profile. The result
+    is kept on your device.</li>
   </ul>
 
   <p>AI processing never runs while you are typing or searching; it only
-  runs after an item is saved.</p>
+  runs after an item is saved, or when you explicitly request a Your Signal
+  reflection.</p>
 
   <h2>Service providers</h2>
   <p>Poky shares data only with the providers needed to run the app:</p>
