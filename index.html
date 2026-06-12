@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poky — Privacy Policy</title>
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 680px;
+      padding: 48px 24px 96px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1c1c1e;
+      background: #ffffff;
+    }
+    h1 { font-size: 28px; line-height: 1.25; }
+    h2 { font-size: 20px; margin-top: 40px; }
+    strong { font-weight: 700; }
+    a { color: #1c1c1e; }
+    .effective { color: #6e6e73; font-weight: 600; }
+    li { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Poky Privacy Policy</h1>
+  <p class="effective">Effective date: June 12, 2026</p>
+
+  <p>Poky is a personal save-for-later app: you save links, notes, and
+  screenshots, and Poky helps you find and re-see them. This page explains
+  what data Poky handles and what happens to it.</p>
+
+  <p>Contact: <a href="mailto:churemy@gmail.com">churemy@gmail.com</a></p>
+
+  <h2>What Poky collects</h2>
+  <ul>
+    <li><strong>Account details.</strong> Your email address and a password.
+    The password is stored in hashed form by our authentication provider
+    (Supabase); we never see it in plain text.</li>
+    <li><strong>The content you save.</strong> Links, notes, screenshots and
+    images, plus the titles, tags, and categories attached to them. This
+    content is private to your account.</li>
+    <li><strong>Text extracted from screenshots.</strong> On iOS, text inside
+    images you save is read directly <strong>on your device</strong> using
+    Apple's built-in text recognition. The image itself is not sent anywhere
+    for this.</li>
+  </ul>
+
+  <p>Poky currently has <strong>no analytics trackers and no ads</strong>,
+  and we do not sell or rent your data to anyone.</p>
+
+  <h2>How your content is stored</h2>
+  <ul>
+    <li>Your saves are stored in a database and file storage hosted by
+    <strong>Supabase</strong>. Each account's data is isolated with row-level
+    security.</li>
+    <li>Images live in a <strong>private</strong> storage bucket under a path
+    tied to your account, and are displayed only through short-lived signed
+    links. They are not publicly accessible.</li>
+  </ul>
+
+  <h2>How your content is processed</h2>
+  <ul>
+    <li><strong>Link previews.</strong> When you save a link, our server
+    fetches that page to pick up its title, description, and preview
+    information.</li>
+    <li><strong>AI enrichment.</strong> After you save an item, a short
+    excerpt of its text (your note text, link metadata, or text extracted
+    from a screenshot on your device) is sent to <strong>Google's Gemini
+    API</strong> to generate a short summary, a few tags, and a category.
+    The result is stored once so the same item is not processed repeatedly.
+    <strong>Your images are never sent to AI providers — only extracted text
+    is.</strong></li>
+  </ul>
+
+  <p>AI processing never runs while you are typing or searching; it only
+  runs after an item is saved.</p>
+
+  <h2>Service providers</h2>
+  <p>Poky shares data only with the providers needed to run the app:</p>
+  <ul>
+    <li><strong>Supabase</strong> — authentication, database, file storage,
+    and the serverless functions that process saves.</li>
+    <li><strong>Google (Gemini API)</strong> — AI text processing described
+    above.</li>
+  </ul>
+
+  <h2>Your data, your control</h2>
+  <ul>
+    <li><strong>Delete a save</strong> any time from the item screen.</li>
+    <li><strong>Delete your account</strong> in Settings → Delete account.
+    This permanently removes your saves, your stored images, and your
+    account itself.</li>
+    <li><strong>Reset your password</strong> from the sign-in screen with an
+    emailed code.</li>
+  </ul>
+
+  <p>Your data is kept until you delete it. There is no backup retention
+  beyond the standard short-term backups of our hosting provider.</p>
+
+  <h2>Children</h2>
+  <p>Poky is not directed at children under 13, and we do not knowingly
+  collect data from them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version will be published at this
+  address with an updated effective date.</p>
+</body>
+</html>
